@@ -1,0 +1,17 @@
+	1. Mellan vilka stationer sker sökningen?
+	Malmö C - Lund C
+	
+	2. Hur ser en QueryString ut om man bara vill ha 5 resultatet för sökningen?
+	?cmdaction=next&selPointFr=0|80000|0&selPointTo=0|81216|&no0f = 5
+
+	3.  Vilka delar av resan beskriver dessa taggar: <Journeys></Journeys>, <Journey></Jouney>,<RouteLinks></RouteLinks>, >,<RouteLink></RouteLink>? Placera dem även korrekt hierarkiskt. 
+	 <Journeys></Journeys> --- resutat av alla resor
+		<Journey></Jouney> --- beskriver EN resa utav alla möjliga resor, pris, ankomst .. 
+	
+	<RouteLinks></RouteLinks> --- färdvägar
+		<RouteLink></RouteLink> --- specific info om färdväg, exempelvis tid, linje .. 
+		
+	4. <Journey>
+	   <NoOfChanges>0</NoOfChanges>
+	 
+	5. <CO2factor></CO2factor>
